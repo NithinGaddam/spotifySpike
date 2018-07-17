@@ -7,14 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F0B390920FD7C920075E534 /* UEComm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0B390720FD7C670075E534 /* UEComm.framework */; };
+		7F0B390A20FD7C920075E534 /* UEComm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0B390720FD7C670075E534 /* UEComm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F0B390D20FD7CB10075E534 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0B390C20FD7CB10075E534 /* CoreBluetooth.framework */; };
+		7F0B391C20FD87D00075E534 /* UEResourceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0B391B20FD87D00075E534 /* UEResourceManager.framework */; };
+		7F0B391D20FD87D00075E534 /* UEResourceManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0B391B20FD87D00075E534 /* UEResourceManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F13D57E20FD781100B7A226 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F13D57D20FD781100B7A226 /* AVFoundation.framework */; };
+		7F13D58020FD781500B7A226 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F13D57F20FD781500B7A226 /* AVKit.framework */; };
 		7FAC8A4D20E6A5CE0092DD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC8A4C20E6A5CE0092DD1A /* AppDelegate.swift */; };
 		7FAC8A4F20E6A5CE0092DD1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC8A4E20E6A5CE0092DD1A /* ViewController.swift */; };
 		7FAC8A5220E6A5CE0092DD1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAC8A5020E6A5CE0092DD1A /* Main.storyboard */; };
 		7FAC8A5420E6A5D00092DD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FAC8A5320E6A5D00092DD1A /* Assets.xcassets */; };
 		7FAC8A5720E6A5D00092DD1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAC8A5520E6A5D00092DD1A /* LaunchScreen.storyboard */; };
+		7FEA241D20FD77810016CE43 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FEA241C20FD77810016CE43 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7F13D58520FD783400B7A226 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F13D58120FD783400B7A226 /* UEComm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2E9D34F1679178F009DD481;
+			remoteInfo = UEComm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F0B390B20FD7C920075E534 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F0B391D20FD87D00075E534 /* UEResourceManager.framework in Embed Frameworks */,
+				7F0B390A20FD7C920075E534 /* UEComm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7F0B390320FD7C5E0075E534 /* UEComm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UEComm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F0B390720FD7C670075E534 /* UEComm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UEComm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F0B390C20FD7CB10075E534 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		7F0B391B20FD87D00075E534 /* UEResourceManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UEResourceManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F13D57D20FD781100B7A226 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7F13D57F20FD781500B7A226 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		7F13D58120FD783400B7A226 /* UEComm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UEComm.xcodeproj; path = "mbg-BTCenturion-ios/UEComm/UEComm.xcodeproj"; sourceTree = "<group>"; };
 		7FAC8A4920E6A5CE0092DD1A /* spotifySpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spotifySpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAC8A4C20E6A5CE0092DD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAC8A4E20E6A5CE0092DD1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +62,8 @@
 		7FAC8A5320E6A5D00092DD1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FAC8A5620E6A5D00092DD1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FAC8A5820E6A5D00092DD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FEA241C20FD77810016CE43 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		7FEA241E20FD77810016CE43 /* spotifySpike.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = spotifySpike.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +71,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F0B390D20FD7CB10075E534 /* CoreBluetooth.framework in Frameworks */,
+				7F0B390920FD7C920075E534 /* UEComm.framework in Frameworks */,
+				7F0B391C20FD87D00075E534 /* UEResourceManager.framework in Frameworks */,
+				7F13D58020FD781500B7A226 /* AVKit.framework in Frameworks */,
+				7F13D57E20FD781100B7A226 /* AVFoundation.framework in Frameworks */,
+				7FEA241D20FD77810016CE43 /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F13D58220FD783400B7A226 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F13D58620FD783400B7A226 /* libUEComm.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7FAC8A4020E6A5CE0092DD1A = {
 			isa = PBXGroup;
 			children = (
+				7F0B391B20FD87D00075E534 /* UEResourceManager.framework */,
+				7F0B390320FD7C5E0075E534 /* UEComm.framework */,
 				7FAC8A4B20E6A5CE0092DD1A /* spotifySpike */,
 				7FAC8A4A20E6A5CE0092DD1A /* Products */,
+				7FEA241B20FD77810016CE43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +113,7 @@
 		7FAC8A4B20E6A5CE0092DD1A /* spotifySpike */ = {
 			isa = PBXGroup;
 			children = (
+				7FEA241E20FD77810016CE43 /* spotifySpike.entitlements */,
 				7FAC8A4C20E6A5CE0092DD1A /* AppDelegate.swift */,
 				7FAC8A4E20E6A5CE0092DD1A /* ViewController.swift */,
 				7FAC8A5020E6A5CE0092DD1A /* Main.storyboard */,
@@ -62,6 +122,19 @@
 				7FAC8A5820E6A5D00092DD1A /* Info.plist */,
 			);
 			path = spotifySpike;
+			sourceTree = "<group>";
+		};
+		7FEA241B20FD77810016CE43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F0B390C20FD7CB10075E534 /* CoreBluetooth.framework */,
+				7F0B390720FD7C670075E534 /* UEComm.framework */,
+				7F13D58120FD783400B7A226 /* UEComm.xcodeproj */,
+				7F13D57F20FD781500B7A226 /* AVKit.framework */,
+				7F13D57D20FD781100B7A226 /* AVFoundation.framework */,
+				7FEA241C20FD77810016CE43 /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +147,7 @@
 				7FAC8A4520E6A5CE0092DD1A /* Sources */,
 				7FAC8A4620E6A5CE0092DD1A /* Frameworks */,
 				7FAC8A4720E6A5CE0092DD1A /* Resources */,
+				7F0B390B20FD7C920075E534 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +170,14 @@
 				TargetAttributes = {
 					7FAC8A4820E6A5CE0092DD1A = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -110,12 +192,28 @@
 			mainGroup = 7FAC8A4020E6A5CE0092DD1A;
 			productRefGroup = 7FAC8A4A20E6A5CE0092DD1A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7F13D58220FD783400B7A226 /* Products */;
+					ProjectRef = 7F13D58120FD783400B7A226 /* UEComm.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7FAC8A4820E6A5CE0092DD1A /* spotifySpike */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7F13D58620FD783400B7A226 /* libUEComm.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUEComm.a;
+			remoteRef = 7F13D58520FD783400B7A226 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7FAC8A4720E6A5CE0092DD1A /* Resources */ = {
@@ -280,6 +378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = spotifySpike/spotifySpike.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 776EQJ8ZBM;
 				INFOPLIST_FILE = spotifySpike/Info.plist;
@@ -298,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = spotifySpike/spotifySpike.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 776EQJ8ZBM;
 				INFOPLIST_FILE = spotifySpike/Info.plist;
