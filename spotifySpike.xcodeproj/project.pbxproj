@@ -14,6 +14,10 @@
 		7F0B391D20FD87D00075E534 /* UEResourceManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0B391B20FD87D00075E534 /* UEResourceManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7F13D57E20FD781100B7A226 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F13D57D20FD781100B7A226 /* AVFoundation.framework */; };
 		7F13D58020FD781500B7A226 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F13D57F20FD781500B7A226 /* AVKit.framework */; };
+		7F87AFD320FEB1AC000C5E27 /* SpeakerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87AFD220FEB1AC000C5E27 /* SpeakerManager.swift */; };
+		7F87AFD620FEB3C6000C5E27 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87AFD520FEB3C6000C5E27 /* Speaker.swift */; };
+		7F87AFDA20FEB402000C5E27 /* SpeakerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87AFD920FEB402000C5E27 /* SpeakerModel.swift */; };
+		7F87AFDC20FEB503000C5E27 /* SpeakerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87AFDB20FEB503000C5E27 /* SpeakerStatus.swift */; };
 		7FAC8A4D20E6A5CE0092DD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC8A4C20E6A5CE0092DD1A /* AppDelegate.swift */; };
 		7FAC8A4F20E6A5CE0092DD1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC8A4E20E6A5CE0092DD1A /* ViewController.swift */; };
 		7FAC8A5220E6A5CE0092DD1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAC8A5020E6A5CE0092DD1A /* Main.storyboard */; };
@@ -55,6 +59,11 @@
 		7F13D57D20FD781100B7A226 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7F13D57F20FD781500B7A226 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		7F13D58120FD783400B7A226 /* UEComm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UEComm.xcodeproj; path = "mbg-BTCenturion-ios/UEComm/UEComm.xcodeproj"; sourceTree = "<group>"; };
+		7F87AFD220FEB1AC000C5E27 /* SpeakerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerManager.swift; sourceTree = "<group>"; };
+		7F87AFD520FEB3C6000C5E27 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		7F87AFD920FEB402000C5E27 /* SpeakerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerModel.swift; sourceTree = "<group>"; };
+		7F87AFDB20FEB503000C5E27 /* SpeakerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerStatus.swift; sourceTree = "<group>"; };
+		7F87AFDE20FEBBE0000C5E27 /* spotifySpike-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spotifySpike-Bridging-Header.h"; sourceTree = "<group>"; };
 		7FAC8A4920E6A5CE0092DD1A /* spotifySpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spotifySpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAC8A4C20E6A5CE0092DD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FAC8A4E20E6A5CE0092DD1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,12 +92,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F0B391E20FD88E60075E534 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7F87AFD220FEB1AC000C5E27 /* SpeakerManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		7F13D58220FD783400B7A226 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				7F13D58620FD783400B7A226 /* libUEComm.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7F87AFD420FEB3B4000C5E27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F87AFD520FEB3C6000C5E27 /* Speaker.swift */,
+				7F87AFD920FEB402000C5E27 /* SpeakerModel.swift */,
+				7F87AFDB20FEB503000C5E27 /* SpeakerStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F87AFDD20FEB8F3000C5E27 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7F87AFDE20FEBBE0000C5E27 /* spotifySpike-Bridging-Header.h */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		7FAC8A4020E6A5CE0092DD1A = {
@@ -113,6 +148,9 @@
 		7FAC8A4B20E6A5CE0092DD1A /* spotifySpike */ = {
 			isa = PBXGroup;
 			children = (
+				7F87AFDD20FEB8F3000C5E27 /* Utilities */,
+				7F87AFD420FEB3B4000C5E27 /* Models */,
+				7F0B391E20FD88E60075E534 /* Managers */,
 				7FEA241E20FD77810016CE43 /* spotifySpike.entitlements */,
 				7FAC8A4C20E6A5CE0092DD1A /* AppDelegate.swift */,
 				7FAC8A4E20E6A5CE0092DD1A /* ViewController.swift */,
@@ -235,6 +273,10 @@
 			files = (
 				7FAC8A4F20E6A5CE0092DD1A /* ViewController.swift in Sources */,
 				7FAC8A4D20E6A5CE0092DD1A /* AppDelegate.swift in Sources */,
+				7F87AFDA20FEB402000C5E27 /* SpeakerModel.swift in Sources */,
+				7F87AFDC20FEB503000C5E27 /* SpeakerStatus.swift in Sources */,
+				7F87AFD320FEB1AC000C5E27 /* SpeakerManager.swift in Sources */,
+				7F87AFD620FEB3C6000C5E27 /* Speaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +430,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.logitech.ue.spotifySpike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ngaddam/Desktop/spotifySpike/spotifySpike/Utilities/spotifySpike-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -407,6 +450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.logitech.ue.spotifySpike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ngaddam/Desktop/spotifySpike/spotifySpike/Utilities/spotifySpike-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
